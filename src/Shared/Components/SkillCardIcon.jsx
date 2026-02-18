@@ -2,24 +2,19 @@ import { Icon } from "@iconify/react";
 
 function SkillCardIcon({ text, src }) {
     return (
-        <div className="m-4 lg:m-6">
-            <div className="h-60 w-40 bg-black border-black border-2 rounded-md flex flex-col items-center p-4">
-                <div className="h-36 w-36 flex items-center justify-center">
-                    <Icon
-                        icon={src}
-                        style={{
-                            width: "100px",
-                            height: "120px",
-                            background: "white",
-                            borderRadius: "5px",
-                            margin: "5px",
-                        }}
-                        fontSize={40}
-                    />
-                </div>
-                <div className="h-10 w-full flex items-center justify-center">
-                    <div className="font-semibold text-xl text-white">{text}</div>
-                </div>
+        <div className="flex flex-col items-center justify-center gap-2 m-2 md:m-4">
+            <div className="flex items-center justify-center">
+                <Icon
+                    icon={src}
+                    style={{
+                        width: "56px",
+                        height: "56px",
+                    }}
+                    fontSize={48}
+                />
+            </div>
+            <div className="font-mulish font-semibold text-sm md:text-base text-black text-center">
+                {text}
             </div>
         </div>
     );

@@ -3,11 +3,9 @@ import PropTypes from 'prop-types';
 
 function AboutLower({ icon, fontSize, style, text }) {
   return (
-    <div className="w-full h-10 flex m-2 items-center">
-      <div className="w-1/3 flex items-center justify-center">
-        <Icon icon={icon} fontSize={fontSize} style={style} />
-      </div>
-      <div className="ml-2 md:ml-5 w-2/3 text-sm md:text-base lg:text-lg span">
+    <div className="flex items-center justify-center gap-3 min-w-0">
+      <Icon icon={icon} fontSize={fontSize} style={style} />
+      <div className="text-sm md:text-base lg:text-lg span text-center">
         {text}
       </div>
     </div>
